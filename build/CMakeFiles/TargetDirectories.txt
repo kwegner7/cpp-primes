@@ -1,0 +1,4 @@
+/home/kurt/repo/data/tutorials/cpp-primes/build/CMakeFiles/LibProcess.dir
+/home/kurt/repo/data/tutorials/cpp-primes/build/CMakeFiles/Run-Process.dir
+/home/kurt/repo/data/tutorials/cpp-primes/build/CMakeFiles/edit_cache.dir
+/home/kurt/repo/data/tutorials/cpp-primes/build/CMakeFiles/rebuild_cache.dir

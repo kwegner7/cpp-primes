@@ -1,0 +1,24 @@
+#!/bin/bash
+
+this_script=$(realpath ${0})
+tools_folder=$(dirname ${this_script}/tools)
+top_folder=$(dirname ${this_script})
+
+pushd ${top_folder}
+
+  if [[ ${1} == "-clean" ]]
+  then
+      rm -rf ./build
+  fi
+  mkdir --parents ./build build/bin
+
+  cmake -B ./build
+  cmake --build ./build
+
+  if [[ $? == 0 ]]; then
+      echo -e "\nCOMPILE OK\n"
+  else
+      echo -e "\nCOMPILE NOT OK\n"
+  fi
+
+popd

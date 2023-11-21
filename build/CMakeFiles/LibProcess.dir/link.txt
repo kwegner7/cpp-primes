@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/libLibProcess.a CMakeFiles/LibProcess.dir/code/src/Process.cpp.o CMakeFiles/LibProcess.dir/code/src/Thread.cpp.o CMakeFiles/LibProcess.dir/code/src/ThreadFunctions.c.o
+/usr/bin/ranlib lib/libLibProcess.a

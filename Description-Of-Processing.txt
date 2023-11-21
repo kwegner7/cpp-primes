@@ -1,0 +1,64 @@
+Radio A is the advantaged/local node
+Radio B is the disadvantaged/remote node         
+
+START
+
+HF Planner will scan for free channels and determine:
+         channel list​
+         Mod/Cod
+         bandwidth​
+
+Radio A: Based on this scan from HF Planner, write this information to
+         a JSON file
+
+Radio A: The MAC Layer sends a sounding signal along with the JSON parameters
+         to the GNU Radio software. The sounding signal will be a sequence
+         known to both Radio A and Radio B. GNU radio performs the D/A and 
+         transmits sounding signal on each of the channels in the available
+         channel list. (diversity) (Task 1 and 2)
+
+Radio A: Rx listen for uplink traffic​ sent by Radio B
+
+Radio B: Replies with SNR values for N best channels (diversity) (Task 3 and 4)​
+
+Radio A: Receives the SNR levels, the GNU Radio performs A/D and passes the 
+         response to the MAC Layer. 
+
+Radio A: When response is received from Radio B, write the received SNR data​
+         to a file. Based on this SNR data, re-write the JSON to contain​
+         only the best channels specified by B.​ This new JSON file will be
+         used to provide the parameters for the payload data package.
+             channel list​
+             Mod/Cod
+             bandwidth​
+
+Radio A: Based on the updated JSON file, Tx the payload data package but using
+         only the highest quality channels (multiplexing)​. The data package is
+         preceded by header information that indicates the signal format to
+         Radio B.
+
+Radio A: Rx listen for uplink traffic ​sent by Radio B
+
+Radio B: Receives the payload data package. Stores the data and/or presents
+         to the user.
+
+OPTION 1
+--------
+
+Radio B: Replies to Radio A and indicates that the data package
+         was received correctly on​ these channels (diversity)​
+         or indicates some problem with the data
+
+Radio A: When status is received from Radio B, logs the status information​
+         and sends an ending sequence to Radio B
+
+OPTION 2
+--------
+
+Radio B: If the message was not received properly, replies to Radio A
+         indicating the error
+
+Radio A: Using a timer, waits for an error message from Radio B. If times
+         out then all OK
+
+

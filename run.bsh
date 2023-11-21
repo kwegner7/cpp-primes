@@ -1,0 +1,10 @@
+#!/bin/bash
+
+path_to_this_script=$(realpath ${0})
+executable_folder=$(dirname ${path_to_this_script})/build/bin
+
+pushd .
+
+  ${executable_folder}/Run-Process
+
+popd
