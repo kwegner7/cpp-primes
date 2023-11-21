@@ -1,0 +1,173 @@
+###################################
+# git config core.ignorecase false
+###################################
+
+.git/
+*.git/
+
+###################################
+# ignore other
+###################################
+
+out/
+
+outputs/
+
+.ipynb_checkpoints/
+
+Actual/
+
+bin/
+
+build/
+
+doxygen/
+
+xerces/
+
+*.tmp
+
+*.stackdump
+
+# Word temporary
+~$*.doc*
+
+# Excel temporary
+~$*.xls*
+
+# Excel Backup File
+*.xlk
+
+# PowerPoint temporary
+~$*.ppt*
+
+# Visio autosave temporary files
+*.~vsd*
+
+###################################
+# ignore Python
+###################################
+
+*.pyc
+
+__pycache__/
+
+###################################
+# ignore C++
+###################################
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Others
+*.exe
+*.out
+*.app
+*.exe
+*.img
+*.zip
+*.pyc
+*.jar
+*.so
+*.bin
+*.class
+*.o
+*.JPG
+*.jpg
+ipynb_checkpoints/
+*.mp3
+*.m4a
+*.mp4
+*.png
+*.gz
+*.wav
+*.MOV
+*.mov
+
+###################################
+# ignore Visual Studio
+###################################
+
+# User-specific files
+*.suo
+*.user
+
+# Directories
+Debug/
+Release/
+x64/
+x86/
+.vs/
+
+# Files
+*.exp
+*.idb
+*.ilk
+*.log
+*.pdb
+*.opendb
+*.sdf
+
+###################################
+# ignore Java
+###################################
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+
+###################################
+# ignore Eclipse
+###################################
+
+.metadata
+.settings/
+.cproject
+.project
+.pydevproject
+/build/

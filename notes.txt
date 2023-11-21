@@ -10,14 +10,20 @@ git init
 git add .
 git commit -m "Initial Commit"
 
-
-
-
-
-
-
-
 https://github.com/login
 kurt email or kwegner7 / Sunari..77
 new password: Sunari(9)
+
+Create a new empty repository on GitHub.com. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub. For more information, see "Creating a new repository."
+
+At the top of your repository on GitHub.com's Quick Setup page, click
+to copy the remote repository URL.
+
+https://github.com/kwegner7/cpp-primes.git
+
+cd /home/kurt/repo/cpp-primes
+git remote add origin https://github.com/kwegner7/cpp-primes.git
+git remote -v
+git branch -v
+master
 
